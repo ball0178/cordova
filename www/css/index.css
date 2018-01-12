@@ -1,0 +1,213 @@
+@charset 'utf-8';
+
+/**********************************
+This will make the background harry potter theme music invisible 
+**********************************/
+
+audio { 
+   display:none;
+}
+/**********************************
+        BASE CSS FOR PAGE
+**********************************/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 20px;
+    font-family: BlinkMacSystemFont, -apple-system, “Segoe UI”, Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+}
+body{
+    min-height: 100vh;
+    background-image: url(../img/background.png);
+    background-size: cover;
+}
+
+/**********************************
+        LAYOUT CSS
+**********************************/
+.page{
+    transform: translateX(-200%);
+    width: 100%;
+    padding: 5rem 0 2rem 0;
+    transition: transform 0.5s ease-out;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+
+}
+.page.active{
+    transform: translateX(0);
+}
+.page header{
+    position:fixed;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4.3rem;
+    padding: 0 2rem;
+    border-bottom: 0.3rem solid gray;
+    background-color: black;
+    color: #EEE;
+}
+.page header>h1{
+    font-style: italic;
+    font-size: 3rem;
+    height: 4rem;
+    line-height: 4rem;
+}
+/**********************************
+        CARD PAGE CSS
+**********************************/
+.item-card{
+    margin: 2rem 2rem 2rem 23rem;
+    border: 1px solid #ddd;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border-left: .5rem solid gray;
+    border-top: .5rem solid gray;
+    border-bottom: .5rem solid gray;
+    border-right: .5rem solid gray;
+    box-shadow: 2px 2px 2px #ddd;
+
+    background-color: #eee;
+    width: 500px;
+    height: 210px
+}
+.item-card img{
+    float:left;
+    margin-right: 1rem;
+    padding: 0.5rem;
+    width: auto;
+    height: 8rem;
+    background-color: black;
+    border-bottom-right-radius: 10%;
+
+
+    border-bottom: .5rem solid gray;
+    border-right: .5rem solid gray;
+    width: 200px;
+}
+
+
+.item-title{
+    -webkit-transition: all 0.5s ease-out;
+
+    font-size: 1.5rem;
+    font-weight: bolder;
+    line-height: 2.4rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    color: #222;
+    cursor: pointer;
+}
+
+.item-title:hover{
+    color: orange;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.1);
+    z-index: inherit;
+    
+}
+.item-desc{
+    font-size: 0.8rem;
+    font-weight: 100;
+    line-height: 1.2rem;
+    padding-right: 1rem;
+    color: #888;
+    height: 3.6rem;
+    text-overflow: clip;
+    overflow: hidden;
+}
+/**********************************
+        SPECIFICS PAGE
+**********************************/
+.back-btn{
+    color: #fff;
+    margin-right: 2rem;
+}
+.back-btn:hover{
+    color: red;
+}
+/**********************************
+        MEDIAQUERIES
+**********************************/
+
+/*All media queries for site*/
+
+@media screen and (max-width: 1235px){
+    .item-card{
+    margin: 2rem 2rem 2rem 13rem;
+
+}
+    
+}
+
+@media screen and (max-width: 1000px){
+    .item-card{
+    margin: 2rem 2rem 2rem 8rem;
+
+}
+}
+
+@media screen and (max-width: 750px){
+    
+    .item-card img{
+    float:left;
+    margin-right: 1rem;
+    padding: 0.5rem;
+    width: auto;
+    height: 8rem;
+    background-color: black;
+    border-bottom-right-radius: 10%;
+
+
+    border-bottom: .0rem;
+    border-right: .5rem solid gray;
+    width: 150px;
+
+    }
+    
+    .item-card{
+    margin: 0.5rem 1rem 1rem 0.1rem;
+    width: 390px;
+    height: 190px;
+
+}
+    .page header>h1{
+    font-size: 1.6rem;
+    height: 2rem;
+    line-height: 4rem;
+}
+    body{
+    min-height: 100vh;
+    background-image: url(../img/backgroundsmall.png);
+    background-size: cover;
+
+}
+    .item-desc{
+    font-size: 0.8rem;
+    font-weight: 100;
+    line-height: 1.2rem;
+    padding-right: 1rem;
+    color: #888;
+    height: 2.6rem;
+    text-overflow: clip;
+    overflow: hidden;
+}
+    .item-title{
+    font-size: 1.5rem;
+
+    line-height: 1.4rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    color: #222;
+    cursor: pointer;
+}
+}

@@ -1,0 +1,52 @@
+{
+  "currency": [
+    {
+      "id":"1",
+      "name": "Gryffindor",
+      "type": "Godric Gryffindor",
+      "description": "Bravery, Pride, Courage...",
+      "imgurl":"./img/gryffindor.svg",
+      "developers": [
+        { "name": "Harry Potter", "imgurl":"./img/harry.gif" },
+        { "name": "Ron Weasely", "imgurl":"./img/ron.gif" },
+        { "name": "Hermoine Granger", "imgurl":"./img/hermoine.gif" }
+      ]
+    },
+    {
+      "id":"2",
+      "name": "Slytherin",
+      "type": "Salazar Slytherin",
+      "description": "Cunning, Tactics, Resourcefulness...",
+      "imgurl":"./img/slytherin.svg",
+      "developers": [
+        { "name": "Voldemort", "imgurl":"./img/voldemort.gif" },
+        { "name": "Draco Malfoy", "imgurl":"./img/draco.gif" },
+        { "name": "Bellatrix Lestrange", "imgurl":"./img/bellatrix.gif" }
+      ]
+    },
+    {
+      "id":"3",
+      "name": "Ravenclaw",
+      "type": "Rowena Ravenclaw",
+      "description": "Wisedom, Learning, Study...",
+      "imgurl":"./img/ravenclaw.svg",
+      "developers": [
+        { "name": "Luna Lovegood", "imgurl":"./img/luna.gif" },
+        { "name": "Rowena Ravenclaw", "imgurl":"./img/rowena.gif" },
+        { "name": "Garrick Ollivander", "imgurl":"./img/garrick.gif" }
+      ]
+    },
+    {
+      "id":"4",
+      "name": "Hufflepuff",
+      "type": "Helga Hufflepuff",
+      "description": "Loyalty, Honour, Humility...",
+      "imgurl":"./img/hufflepuff.svg",
+      "developers": [
+        { "name": "Newt Scamander", "imgurl":"./img/newt.gif" },
+        { "name": "Nymphadora Tonks", "imgurl":"./img/nymphadora.gif" },
+        { "name": "Cedric Diggory", "imgurl":"./img/cedric.gif" }
+      ]
+    }
+  ]
+}
